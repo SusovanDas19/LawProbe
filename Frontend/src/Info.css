@@ -1,0 +1,224 @@
+.mainInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 100px 200px 100px;
+    /* width: 100%; */
+    gap: 100px;
+}
+
+.subdivInfo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-family: var(--font-family);
+    line-height: 1.7rem;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(3, 123, 144, 0.149), rgba(10, 1, 31, 0.176));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    box-shadow: 0 8px 32px 0 rgba(136, 129, 129, 0.157);
+    border-radius: 5px;
+}
+
+.subdivInfo:hover {
+    background: transparent;
+    border-right: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+    border-left: none;
+}
+
+.whatWeDo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background: none;
+    font-family: var(--font-family);
+    line-height: 1.7rem;
+}
+
+li {
+    list-style-type: none;
+    font-family: var(--font-family);
+    font-size: large;
+
+}
+
+
+.whatWeDo p {
+    font-size: large;
+}
+
+.whatWeDo p:hover {
+    color: var(--secondary-color);
+
+}
+
+
+
+/* Terms of Services */
+
+.terms-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: var(--font-family);
+}
+
+.terms-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.last-updated {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.intro {
+    background-color: #01111d;
+    padding: 15px;
+    border-left: 5px solid var(--secondary-color);
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.terms-section {
+    margin-bottom: 20px;
+    font-family: var(--font-family);
+}
+
+.terms-section h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.terms-section p,
+.terms-section ul {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.terms-section ul {
+    padding-left: 20px;
+}
+
+.terms-section ul li {
+    margin-bottom: 8px;
+}
+
+#imp strong {
+    color: red;
+    cursor: pointer;
+    text-shadow: none;
+    
+}
+
+
+
+
+/* about us section */
+.about-contact-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: var(--font-family);
+}
+
+.contact-section {
+    margin-bottom: 30px;
+    font-family: var(--font-family);
+}
+
+.contact-section h1 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+.contact-section p {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.contact-details {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.contact-details p {
+    font-size: 1rem;
+    color: white;
+    margin: 5px 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.contact-form h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    background: transparent;
+}
+
+
+.contact-form button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #1976d2;
+    border: 1px solid white;
+    border-radius: 15px;
+    
+}

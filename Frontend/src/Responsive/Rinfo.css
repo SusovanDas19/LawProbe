@@ -1,0 +1,39 @@
+
+/* 2xl: 1536px */
+@media (max-width: 1536px) {
+}
+/* xl: 1280px */
+@media (max-width: 1280px) {
+   
+}
+
+/* lg: 1024px */
+@media (max-width: 1024px) {
+    .mainInfo{
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-bottom: 70px;
+        gap: 80px;
+    }
+}
+
+/* md: 768px */
+@media (max-width: 768px) {
+    
+    .mainInfo{
+        margin-left: 50px;
+        margin-right: 50px;
+        gap: 68px;
+    }
+  
+}
+
+/* sm: 640px */
+@media (max-width: 640px) {
+
+    .mainInfo{
+        margin-left: 35px;
+        margin-right: 35px;
+        gap: 50px;
+    }
+}

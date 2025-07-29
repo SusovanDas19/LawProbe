@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    /* background-image:
+        radial-gradient(140% 107% at 50% 10%, #000000 37.41%, #fd7d3d 150%, #232222 100%),
+        linear-gradient(to right, rgb(32, 0, 0), rgb(0, 24, 74), rgb(6, 3, 48));
+    background-blend-mode: overlay; */
+    /* background-image: linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0)); */
+    background-color: #050d17;
+    font-family: 'Titillium Web', sans-serif;
+}

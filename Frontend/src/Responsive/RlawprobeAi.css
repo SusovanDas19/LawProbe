@@ -1,0 +1,89 @@
+
+/* 2xl: 1536px */
+@media (max-width: 1536px) {
+}
+/* xl: 1280px */
+@media (max-width: 1280px) {
+   
+    .mainAi{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .mainAiDiv{
+        width: 1000px;
+    }
+
+    .aiSearch textarea{
+        height: 60px;
+        width: 570px;
+    }
+}
+
+/* lg: 1024px */
+@media (max-width: 1024px) {
+    .mainAi{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .mainAiDiv{
+        width: 700px;
+    }
+}
+
+/* md: 768px */
+@media (max-width: 768px) {
+    
+    .mainAi{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .headingAI h1{
+        font-size: 2rem;
+    }
+
+    .aiSearch textarea{
+        height: 60px;
+        width: 470px;
+    }
+
+    .generating{
+        font-size: 27px;
+    }
+
+    .mainAiDiv{
+        width: 600px;
+    }
+
+    .responseRemove{
+        display: none;
+    }
+
+    .responseRemove2{
+        display: flex;
+    }
+  
+}
+
+/* sm: 640px */
+@media (max-width: 640px) {
+    .mainAi{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .aiSearch textarea{
+        height: 50px;
+        width: 330px;
+    }
+
+    .mainAiDiv{
+        width: 300px;
+    }
+
+    .generating{
+        font-size: 22px;
+    }
+
+}

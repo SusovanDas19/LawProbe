@@ -1,0 +1,269 @@
+:root {
+    --primary-text-color: #F5F5F5;
+    --secondary-color: #229799;
+    --thrid-light-color: #48CFCB;
+    --font-family: 'Titillium Web', sans-serif;
+}
+
+
+
+.mainDiv {
+    /* background-color: rgb(49, 30, 1); */
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 150px 0;
+    position: relative;
+    font-family: var(--font-family);
+
+}
+
+
+.tempBtn {
+    height: 28px;
+    width: 28px;
+    background-color: transparent;
+    color: black;
+    margin: 10px;
+    border-radius: 100px;
+    border: 1px solid var(--thrid-light-color);
+}
+
+.btnRemove {
+    height: 28px;
+    width: 28px;
+    background-color: transparent;
+    color: black;
+    margin: 10px;
+    border-radius: 100px;
+}
+
+.resIcon {
+    font-size: 18px;
+}
+
+.seclaw {
+    position: absolute;
+    top: -40px;
+    left: 230px;
+    padding: 3px 100px 1px 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    border-bottom: none;
+    font-family: var(--font-family);
+    z-index: 1;
+}
+
+.container {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+    width: 900px;
+    height: auto;
+    background: linear-gradient(135deg, rgba(3, 123, 144, 0.149), rgba(10, 1, 31, 0.176));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    box-shadow: 0 8px 32px 0 rgba(136, 129, 129, 0.157);
+    border-radius: 5px;
+}
+
+.dtlheader {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+}
+
+.dtlfooter {
+    margin-top: auto;
+}
+
+
+.remove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    top: -28px;
+    right: -28px;
+}
+
+.save {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -5px;
+    right: 0px;
+}
+
+.readlater {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -6px;
+    right: 45px;
+
+}
+
+
+.dtlheader .remove,
+.dtlfooter .save,
+.dtlfooter .readlater {
+    display: none;
+}
+
+.mainDiv:hover .remove,
+.mainDiv:hover .save,
+.mainDiv:hover .readlater {
+    display: inline-block;
+}
+
+
+.removeText {
+    position: absolute;
+    top: -58px;
+    right: -30px;
+    color: var(--thrid-light-color);
+    font-size: 14px;
+    background-color: rgba(8, 1, 1, 0.177);
+    border-radius: 5px;
+    font-family: var(--font-family);
+    padding: 5px;
+}
+
+.saveText {
+    position: absolute;
+    bottom: -35px;
+    right: 5px;
+    color: var(--thrid-light-color);
+    font-size: 14px;
+    background-color: rgba(8, 1, 1, 0.177);
+    border-radius: 5px;
+    font-family: var(--font-family);
+    padding: 1px;
+}
+
+.rLText {
+    position: absolute;
+    bottom: -35px;
+    right: 30px;
+    color: var(--thrid-light-color);
+    font-size: 14px;
+    background-color: rgba(8, 1, 1, 0.177);
+    border-radius: 5px;
+    font-family: var(--font-family);
+    padding: 1px;
+}
+
+
+
+.chapter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 10px;
+}
+
+.chapterStyle {
+    padding: 8px 20px;
+    background-color: black;
+    border-radius: 7px;
+}
+
+
+
+/* toast-box */
+.toastBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    height: 80px;
+    width: 400px;
+    gap: 8px;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: rgba(36, 35, 35, 0.735);
+    border-radius: 8px;
+    opacity: 0;
+    border-bottom: 1px solid var(--thrid-light-color);
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+.toastBox.visible {
+    opacity: 1;
+    pointer-events: auto;
+    /* Allows interaction when visible */
+}
+
+.toastBox.hidden {
+    opacity: 0;
+    pointer-events: none;
+    /* Prevents interaction when hidden */
+}
+
+
+@media (max-width: 768px) {
+    .toastBox {
+        height: 50px;
+        width: 300px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    .toastMessage {
+        font-size: small;
+    }
+
+
+}
+
+
+
+
+.red {
+    fill: red !important;
+    font-size: 23px;
+    margin-left: 20px;
+}
+
+.green {
+    fill: green;
+    font-size: 23px;
+    margin-left: 20px;
+
+}
+
+.yellow {
+    fill: rgb(229, 167, 9);
+    font-size: 23px;
+    margin-left: 20px;
+
+}
+
+.toastBox p {
+    font-family: var(--font-family);
+    font-size: 20px;
+    color: white;
+}

@@ -1,0 +1,203 @@
+:root {
+  --primary-text-color: #F5F5F5;
+  --secondary-color: #229799;
+  --thrid-light-color: #48CFCB;
+  --font-family: 'Titillium Web', sans-serif;
+}
+
+.lawch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  flex-direction: row;
+
+}
+
+h1 {
+  font-family: var(--font-family);
+}
+
+.law-ch-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.law-title {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: var(--thrid-light-color);
+}
+
+.law-select {
+  width: 250px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: var(--font-family);
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+  background-color: transparent;
+}
+
+.law-select:focus {
+  border-color: var(--primary-text-color);
+  background-color: black;
+}
+
+.low-select:hover {
+  background-color: var(--secondary-color);
+}
+
+/* section input area */
+
+.secInp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+
+}
+
+.secInp input {
+  background-color: transparent;
+  height: 50px;
+  width: 750px;
+  border-radius: 10px;
+  border: 1px solid var(--primary-text-color);
+  font-family: var(--font-family);
+  font-size: 20px;
+  text-align: center;
+}
+
+.secInp input:focus{
+  border: 1px solid var(--secondary-color);
+  outline: none;
+}
+
+.secInp input::placeholder {
+  color: rgb(98, 94, 94);
+  outline: none;
+}
+
+.search{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.example{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 145px;
+
+}
+
+.exSec{
+  width:100px;
+  height: 30px;
+  background-color: var(--secondary-color);
+  text-align: center;
+  border: 1px solid var(--primary-text-color);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family);
+}
+.searchBtn {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  font-family: var(--font-family);
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.searchBtn::after,
+.searchBtn::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.searchBtn::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: var(--secondary-color);
+  border-radius: 10px;
+}
+
+.searchBtn::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: rgba(0, 0, 0, 0.277);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+  border: 0.5px solid white;
+}
+
+.searchBtn:hover::before {
+  transform: translate(5%, 18%);
+  width: 110%;
+  height: 110%;
+}
+
+.searchBtn:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.searchBtn:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+
+
+.loader {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  clip-path: inset(0 3ch 0 0);
+  animation: l4 1s steps(4) infinite;
+  margin: 100px auto auto 700px;
+}
+.loader:before {
+  content:"Loading...";
+}
+@keyframes l4 {to{clip-path: inset(0 -1ch 0 0)}}

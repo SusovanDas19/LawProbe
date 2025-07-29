@@ -1,0 +1,176 @@
+.mainAi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-family: var(--font-family);
+    margin-bottom: 100px;
+    margin-top: 90px;
+}
+
+.subAidiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headingAI {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.user {
+    color: var(--thrid-light-color);
+    font-size: 40px;
+}
+
+.headingP {
+    color: rgba(238, 229, 229, 0.45);
+    text-align: center;
+}
+
+.aiSearch textarea {
+    background-color: transparent;
+    height: 90px;
+    width: 750px;
+    border-radius: 10px;
+    border: 1px solid var(--primary-text-color);
+    font-family: var(--font-family);
+    font-size: 20px;
+    color: var(--primary-text-color);
+    padding: 10px;
+    resize: none;
+    overflow: auto;
+    transition: border-color 0.3s ease;
+}
+
+.aiSearch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.aiSearch textarea:focus {
+    border: 1px solid var(--secondary-color);
+    outline: none;
+}
+
+.aiSearch textarea::placeholder {
+    color: rgb(211, 203, 203);
+    outline: none;
+}
+
+.generating {
+    width: fit-content;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 30px;
+    clip-path: inset(0 3ch 0 0);
+    animation: l4 1s steps(4) infinite;
+}
+
+.generating:before {
+    content: "Generating..."
+}
+
+@keyframes l4 {
+    to {
+        clip-path: inset(0 -1ch 0 0)
+    }
+}
+
+.aiResponse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.mainAiDiv {
+    width: 1100px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-family);
+    position: relative;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(3, 123, 144, 0.149), rgba(10, 1, 31, 0.176));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    box-shadow: 0 8px 32px 0 rgba(136, 129, 129, 0.157);
+    border-radius: 5px;
+}
+
+#q {
+    width: 100%;
+    color: var(--thrid-light-color);
+    font-family: var(--font-family);
+    font-size:large;
+}
+
+#a {
+    font-family: var(--font-family);
+    width: 100%;
+    font-size: medium;
+    line-height: 1.7rem;
+    font-weight: 400
+}
+
+.responseRemove {
+    background-color: brown;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-weight: bold;
+}
+.responseRemove2 {
+    background-color: brown;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-weight: bold;
+    display: none;
+    opacity: 0.5;
+}
+
+.responseRemove2:hover{
+    opacity: 1;
+}
+
+.aiRemove {
+    font-size: 18px;
+    font-weight: 900;
+    stroke-width: 1px;
+}
+
+.mainAi {
+    z-index: -999999999999999;
+}

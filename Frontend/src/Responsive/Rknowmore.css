@@ -1,0 +1,96 @@
+/* 2xl: 1536px */
+@media (max-width: 1536px) {}
+
+/* xl: 1280px */
+@media (max-width: 1280px) {}
+
+/* lg: 1024px */
+@media (max-width: 1024px) {}
+
+/* md: 768px */
+@media (max-width: 768px) {
+    .lawch {
+        flex-direction: column;
+    }
+
+    .law-ch-container {
+        margin: 0px;
+
+    }
+
+    .search {
+        flex-direction: column;
+    }
+
+    .secInp input {
+        width: 380px;
+    }
+
+    .searchBtn {
+        width: 80px;
+        height: 27px;
+    }
+
+    .example {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 7px;
+        margin-right: 0px;
+        place-items: center;
+    }
+
+    .example .exSec:last-child {
+        grid-column: 2;
+    }
+
+    .example h3 {
+        grid-column: 1 / -1;
+    }
+
+    .exSec {
+        width: 95px;
+        height: 25px;
+
+    }
+    
+    .loader{
+        margin: 40px 0px 20px 150px;
+        font-size: 20px;
+    }
+
+    /* response component  */
+
+    .details{
+        width: 320px;
+    }
+
+
+    .seclaw{
+        top: -42px;
+        left: -48px;
+        padding: 3px 30px 1px 10px;
+    }
+
+    .chapter{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .chapter h3 {
+        font-size: 1.1rem; 
+    }
+
+}
+
+/* sm: 640px */
+@media (max-width: 640px) {
+    .secInp input {
+        width: 300px;
+    }
+
+    .searchBtn {
+        width: 75px;
+        height: 22px;
+    }
+    
+    /* response component  */
+}

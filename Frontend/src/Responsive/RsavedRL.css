@@ -1,0 +1,41 @@
+
+/* 2xl: 1536px */
+@media (max-width: 1536px) {
+}
+/* xl: 1280px */
+@media (max-width: 1280px) {
+   
+}
+
+/* lg: 1024px */
+@media (max-width: 1024px) {
+    .readlaterHeading{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+/* md: 768px */
+@media (max-width: 768px) {
+    
+    .readlaterHeading{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .loader {
+        font-size: 27px;
+    }
+  
+}
+
+/* sm: 640px */
+@media (max-width: 640px) {
+    .readlaterHeading{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .loader {
+        font-size: 20px;
+    }
+
+}
