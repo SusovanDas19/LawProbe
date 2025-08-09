@@ -24,7 +24,15 @@ A full-stack web application designed to provide users with seamless access to v
 ## 🛠️ Tech Stack & Architecture
 
 [![My Skills](https://skillicons.dev/icons?i=react,vite,css,javascript,nodejs,express,mongodb,ai,aws,nginx,ssl&perline=6&theme=dark)](https://skillicons.dev)
-
+<p align="left">
+<img src="https://img.shields.io/badge/Mongoose-880000?style=flat-square&logo=mongoose&logoColor=white" alt="Mongoose" />
+<img src="https://img.shields.io/badge/JWT-black?style=flat-square&logo=json-web-tokens&logoColor=white" alt="JWT" />
+<img src="https://img.shields.io/badge/Bcrypt-E9E9E9?style=flat-square&logo=hashnode&logoColor=black" alt="Bcrypt" />
+<img src="https://img.shields.io/badge/Zod-blue?style=flat-square&logo=typescript&logoColor=white" alt="Zod" />
+<img src="https://img.shields.io/badge/Recoil-purple?style=flat-square&logo=recoil&logoColor=white" alt="Recoil" />
+<img src="https://img.shields.io/badge/Motion-yellow?style=flat-square&logo=framer&logoColor=white" alt="Motion" />
+<img src="https://img.shields.io/badge/PM2-purple?style=flat-square&logo=framer&logoColor=white" alt="PM2" />
+</p>
 * **Frontend:**
     * **React:** For building a dynamic and responsive user interface.
     * **Recoil:** For efficient and predictable state management.
