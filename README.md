@@ -33,6 +33,7 @@ A full-stack web application designed to provide users with seamless access to v
 <img src="https://img.shields.io/badge/Motion-yellow?style=flat-square&logo=framer&logoColor=white" alt="Motion" />
 <img src="https://img.shields.io/badge/PM2-purple?style=flat-square&logo=framer&logoColor=white" alt="PM2" />
 </p>
+
 * **Frontend:**
     * **React:** For building a dynamic and responsive user interface.
     * **Recoil:** For efficient and predictable state management.
